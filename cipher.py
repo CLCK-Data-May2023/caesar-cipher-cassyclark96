@@ -18,7 +18,7 @@ def encrypt(message, shift):
     return encrypted_message
 
 shift = 5
-input_message = input("Enter a plain text phrase: ")
+input_message = input("Please enter a sentence: ")
 encrypted_message = encrypt(input_message.lower(), shift)
 
 print("The encrypted sentence is:", encrypted_message)

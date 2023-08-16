@@ -21,4 +21,4 @@ shift = 5
 input_message = input("Enter a plain text phrase: ")
 encrypted_message = encrypt(input_message.lower(), shift)
 
-print("Encrypted message:", encrypted_message)
+print("The encrypted sentence is:", encrypted_message)

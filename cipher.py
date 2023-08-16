@@ -18,7 +18,7 @@ def encrypt(sentence, shift):
     return encrypted_sentence
 
 shift = 5
-input_sentence = input("Please enter a sentence: ")
+input_sentence = input("Please enter a sentence:")
 encrypted_sentence = encrypt(input_sentence.lower(), shift)
 
-print("The encrypted sentence is: ", encrypted_sentence)
+print("The encrypted sentence is:", encrypted_sentence)

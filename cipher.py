@@ -1,24 +1,22 @@
-# add your code here
-#create alphabet list
 letters = "abcdefghijklmnopqrstuvwxyz"
 
 #function to shift letters in original message over 5 spaces
-def encrypt(message, shift):
+def encrypt(sentence, shift):
 
-    encrypted_message = " "
+    encrypted_sentence = " "
 
-    for letter in message:
+    for letter in sentence:
         if letter in letters:
             index = letters.index(letter)
             shifted_index = (index + shift) % len(letters)
-            encrypted_message += letters[shifted_index]
+            encrypted_sentence += letters[shifted_index]
         else:
-            encrypted_message += letter
+            encrypted_sentence += letter
 
-    return encrypted_message
+    return encrypted_sentence
 
 shift = 5
-input_message = input("Please enter a sentence: ")
-encrypted_message = encrypt(input_message.lower(), shift)
+input_sentence = input("Please enter a sentence: ")
+encrypted_sentence = encrypt(input_sentence.lower(), shift)
 
-print("The encrypted sentence is:", encrypted_message)
+print("The encrypted sentence is: ", encrypted_sentence)
